@@ -22,11 +22,18 @@ public class exercicio03 {
 		delta = Math.pow(b, 2) - 4 * a * c;
 		rq = Math.sqrt(delta);
 		
-		r1 = (-b + rq) / (2 *a);
-		r2 = (-b - rq) / (2 *a);
+		if (a != 0 || delta >= 0 ) {
+			r1 = (-b + rq) / (2 *a);
+			r2 = (-b - rq) / (2 *a);
+			
+			System.out.println("Raíz 1 === " + r1);
+			System.out.println("Raíz 2 === " + r2);
+		}
+		else {
+			System.out.println("Erro");
+		}
 		
-		System.out.println("Raíz 1 === " + r1);
-		System.out.println("Raíz 2 === " + r2);
+		
 
 	}
 
