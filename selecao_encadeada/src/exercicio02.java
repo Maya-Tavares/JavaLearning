@@ -29,11 +29,14 @@ public class exercicio02 {
 					System.out.println("Taxa ----> " + taxa);
 					System.out.println("Total -----> " + total);
 				}
-				else if(d < 15) {
+				else if(d < 15 && d > 0) {
 					taxa = 58 * d;
 					total = taxa + (250 * d);
 					System.out.println("Taxa ----> " + taxa);
 					System.out.println("Total -----> " + total);
+				}
+				else if (d <= 0) {
+					System.out.println("Erro, tente novamente");
 				}
 				
 				
