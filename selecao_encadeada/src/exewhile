@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class exe1 {
+
+	public static void main(String[] args) {
+			
+		// leia 15 números fornecidos pelo usuário. Imprima o maior valor informado.
+		// MENOR VALOR ---> Integer.MIN_VALUE;
+		
+			int num, maior = 0, cont = 1;
+			Scanner in = new Scanner(System.in);
+			
+			while(cont < 4) {
+				System.out.print("Imprima um número: ");
+				num = in.nextInt();	
+				cont =  cont + 1;
+				
+				if(cont == 1 || num > maior) {
+					maior = num;
+				}
+			
+	} 
+			System.out.println("O maior numero é o: " + maior);
+			
+	}
+}
+
