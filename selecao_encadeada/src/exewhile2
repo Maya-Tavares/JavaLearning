@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+public class exe02 {
+
+	public static void main(String[] args) {
+		int ent, cont, res;
+		Scanner in = new Scanner(System.in);
+		String resposta;
+		
+		//tabuada
+			
+			while(true) {
+				System.out.println("Digite um numero para descobrir a tabuada: ");
+				ent = in.nextInt();
+				cont = 0;
+				
+				while(cont <= 10 ) {
+					res = ent * cont;
+					System.out.println(ent + " * " + cont + " = " +  res);
+
+					cont ++;
+				}
+				
+				System.out.println("Deseja continuar? s/n");
+				resposta = in.next();
+				
+				if(resposta.equalsIgnoreCase("n")) {
+					break;
+				}
+			}
+
+	}
+
+}
